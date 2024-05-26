@@ -26,13 +26,6 @@ public class UsersManagementController {
         return ResponseEntity.ok(usersManagementService.register(reg));
     }
 
-   /* @PostMapping("/auth/login")
-    public ResponseEntity<RequestRes> login(@RequestBody RequestRes req, HttpSession session){
-        // Store user information in session
-        session.setAttribute("user", req.getUserAccount());
-
-        return ResponseEntity.ok(usersManagementService.login(req));
-    }*/
 
     @PostMapping("/auth/login")
     public ResponseEntity<RequestRes> login(@RequestBody RequestRes req){
